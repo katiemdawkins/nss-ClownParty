@@ -1,14 +1,16 @@
-import { getReservations } from "./Reservations.js"
+import { getReservations } from "./dataAccess.js"
+import { deleteReservation } from "./dataAccess.js"
 
 const convertRequestToListElement = (reservationObj) => {
     let html = `<li>
-        ${reservationObj.parentName} requests a party for ${reservationObj.numberOfKidGuests} on ${reservationObj.dateOfReservation}
-        <button class = "request__delete"
-            id="request--${reservationObj.id}
-            Delete
+        ${reservationObj.parentName} requests a party for ${reservationObj.numberOfKidGuests} kids on ${reservationObj.dateOfReservation}
+        <button class ="reservation__delete"
+        id="reservation--${reservationObj.id}>
+        Delete
         </button>
-      </li>  
+        </li>  
     `
+    return html
 }
 
 export const Reservations = () => {
@@ -23,3 +25,12 @@ export const Reservations = () => {
     `
     return html
 }
+
+const mainContainer = document.querySelector("#container")
+
+mainContainer.addEventListener("click", click => {
+    if (click.target.id.startsWith ("reservation--")){
+        const [,reservationObjId] = click.target.id.split("--")
+        deleteReservation(parseInt(reservationObjId))
+    }
+})

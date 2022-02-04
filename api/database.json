@@ -1,0 +1,16 @@
+{
+    "clowns": [],
+    "completions": [],
+    "reservations": [
+      {
+        "id": 1,
+        "parentName": "Suzi Carmichael",
+        "childName": "Dude",
+        "numberOfKidGuests": 10,
+        "address":"34445 Bianka Ports",
+        "dateOfReservation": "2022-02-14",
+        "lengthOfReservation": "2 hours"
+      }
+   
+    ]
+  }

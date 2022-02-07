@@ -1,15 +1,44 @@
 {
-  "clowns": [],
+  "clowns": [
+      {
+          "id": 1,
+          "clownName": "Buttons",
+          "realName": "Mike"
+      },
+      {
+        "id": 2,
+        "clownName": "Lollipop",
+        "realName": "Leslie"
+      }
+  ],
   "completions": [],
   "reservations": [
     {
-      "parentName": "katei",
-      "childName": "ksdie k",
-      "numberOfKidGuests": "111",
-      "address": "www",
+      "parentName": "Theo",
+      "childName": "Larry",
+      "numberOfKidGuests": "12",
+      "address": "555 lllll lllll ",
       "dateOfReservation": "2022-02-18",
       "lengthOfReservation": "2",
-      "id": 1
+      "id": 2
+    },
+    {
+      "parentName": "Leslie Knope",
+      "childName": "Andy",
+      "numberOfKidGuests": "14",
+      "address": "444 Street",
+      "dateOfReservation": "2022-02-24",
+      "lengthOfReservation": "2",
+      "id": 3
+    },
+    {
+      "parentName": "Sam",
+      "childName": "Hill",
+      "numberOfKidGuests": "5",
+      "address": "333 Street",
+      "dateOfReservation": "2022-03-19",
+      "lengthOfReservation": "1",
+      "id": 6
     }
   ]
 }

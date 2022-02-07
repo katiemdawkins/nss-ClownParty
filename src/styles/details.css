@@ -27,3 +27,11 @@ h1 {
 body {
     background-color: rgba(0, 174, 255, 0.699);
 }
+
+.reservation__delete, .reservation__deny{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background-color: rgb(13, 231, 97);
+    color: rgb(0, 0, 0);
+    font-size: .75rem;
+}
